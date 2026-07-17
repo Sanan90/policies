@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Политика конфиденциальности — Овощебаза / Privacy Policy — OvosheBaza</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0d1410;
+      color: #e6f0e8;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.04);
+      border-radius: 16px;
+      padding: 48px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #6fcf7f;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: rgba(255,255,255,0.4);
+      font-size: 0.9rem;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #6fcf7f;
+      margin: 32px 0 12px;
+    }
+    p, li {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.75);
+    }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+    a { color: #6fcf7f; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight {
+      background: rgba(111,207,127,0.08);
+      border: 1px solid rgba(111,207,127,0.25);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 12px;
+    }
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.3);
+      font-size: 0.85rem;
+    }
+    /* Переключатель языка */
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .lang-switch button {
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 20px;
+      border: 1px solid rgba(111,207,127,0.3);
+      background: transparent;
+      color: rgba(255,255,255,0.5);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .lang-switch button:hover {
+      border-color: rgba(111,207,127,0.6);
+      color: rgba(255,255,255,0.8);
+    }
+    .lang-switch button.active {
+      background: #6fcf7f;
+      border-color: #6fcf7f;
+      color: #0d1410;
+    }
+    /* По умолчанию показан русский. Если JS отключён — видны обе версии,
+       что тоже допустимо и ничего не ломает. */
+    body.js-on #lang-en { display: none; }
+    body.js-on #lang-ru { display: block; }
+    body.js-on.show-en #lang-en { display: block; }
+    body.js-on.show-en #lang-ru { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="lang-switch">
+      <button id="btn-ru" class="active" onclick="setLang('ru')">Русский</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+
+    <!-- ============ РУССКАЯ ВЕРСИЯ ============ -->
+    <div id="lang-ru">
+      <h1>🥬 Политика конфиденциальности</h1>
+      <p class="subtitle">Овощебаза · Доставка овощей и фруктов · Обновлено: июль 2026</p>
+
+      <p>Эта Политика описывает, какие данные приложение «Овощебаза» («мы», «приложение», «сервис») собирает, зачем и как их защищает. Приложение доставляет овощи и фрукты и работает в городе Клин и окрестностях.</p>
+
+      <h2>1. Какие данные мы собираем</h2>
+      <p>Мы собираем только то, без чего невозможно принять и доставить заказ:</p>
+      <ul>
+        <li><strong>Номер телефона</strong> — используется для входа в приложение и для связи по заказу.</li>
+        <li><strong>Имя</strong> — то, которое вы указали в профиле.</li>
+        <li><strong>Адреса доставки</strong> — сохраняются, чтобы не вводить их заново при следующем заказе.</li>
+        <li><strong>История заказов</strong> — состав, суммы, даты и статусы ваших заказов.</li>
+        <li><strong>Токен устройства для уведомлений</strong> — технический идентификатор, нужный, чтобы отправлять push-уведомления.</li>
+      </ul>
+      <p>Мы не собираем геолокацию устройства, не читаем контакты и не имеем доступа к вашим фото и файлам.</p>
+
+      <h2>2. Зачем мы используем данные</h2>
+      <ul>
+        <li>Чтобы принять заказ, собрать его и доставить по вашему адресу.</li>
+        <li>Чтобы рассчитать стоимость доставки по указанному адресу.</li>
+        <li>Чтобы связаться с вами по телефону, если по заказу возникнут вопросы.</li>
+        <li>Чтобы показывать вам историю ваших заказов.</li>
+        <li>Чтобы присылать уведомления о новых поступлениях и статусе заказа — если вы разрешили уведомления.</li>
+      </ul>
+
+      <h2>3. Где хранятся данные</h2>
+      <p>Данные хранятся в облачном сервисе Google Firebase (Firestore) с шифрованием при передаче и хранении. Доступ к вашему профилю есть только у вас — это обеспечивается правилами безопасности Firebase, привязанными к вашей учётной записи. Сотрудники магазина видят только те данные заказа, которые нужны для его сборки и доставки.</p>
+
+      <h2>4. Передача третьим лицам</h2>
+      <p>Мы не продаём ваши данные и не передаём их для рекламы. Данные передаются только тем сервисам, без которых приложение не может работать:</p>
+      <ul>
+        <li><strong><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase</a></strong> — авторизация по номеру телефона, хранение данных, отправка уведомлений.</li>
+        <li><strong>Telegram</strong> — оформленный заказ отправляется в закрытый рабочий чат магазина, чтобы сотрудники увидели его и начали сборку. В сообщение попадают состав заказа, имя, телефон и адрес доставки.</li>
+        <li><strong>Сервис геокодирования</strong> — указанный вами адрес преобразуется в координаты, чтобы рассчитать расстояние и стоимость доставки.</li>
+      </ul>
+
+      <h2>5. Уведомления</h2>
+      <p>Push-уведомления присылаются только с вашего разрешения. Вы можете отключить их в любой момент в настройках телефона — на работу приложения это не влияет.</p>
+
+      <h2 id="delete">6. Удаление аккаунта и данных</h2>
+      <p>Вы можете удалить свой аккаунт в любой момент. Никаких писем и ожидания для этого не требуется.</p>
+      <div class="highlight">
+        <p><strong>Как удалить аккаунт в приложении:</strong></p>
+        <ul>
+          <li>Откройте вкладку <strong>Профиль</strong></li>
+          <li>Пролистайте вниз и нажмите <strong>«Удалить аккаунт»</strong></li>
+          <li>Подтвердите удаление</li>
+        </ul>
+        <p style="margin-top:12px;"><strong>Если приложение не установлено:</strong> напишите нам на <a href="mailto:ovoshebaza.klin@gmail.com">ovoshebaza.klin@gmail.com</a> с номера телефона, на который зарегистрирован аккаунт, указав этот номер в письме. Мы удалим аккаунт в течение 30 дней.</p>
+      </div>
+      <p style="margin-top:16px;"><strong>Что удаляется:</strong> ваш профиль, имя, сохранённые адреса доставки и токены уведомлений — безвозвратно.</p>
+      <p><strong>Что сохраняется:</strong> обезличенные записи о совершённых заказах — они нужны нам для бухгалтерского и налогового учёта и хранятся в сроки, установленные законом. Эти записи не используются для связи с вами.</p>
+
+      <h2>7. Дети</h2>
+      <p>Приложение не предназначено для детей младше 13 лет. Мы осознанно не собираем данные детей младше 13 лет.</p>
+
+      <h2>8. Изменения в Политике</h2>
+      <p>Мы можем время от времени обновлять эту Политику. Существенные изменения мы сообщим через приложение. Продолжая пользоваться приложением после изменений, вы принимаете обновлённую Политику.</p>
+
+      <h2>9. Контакты</h2>
+      <p>Если у вас есть вопросы об этой Политике или о ваших данных, напишите нам:<br/>
+      <a href="mailto:ovoshebaza.klin@gmail.com">ovoshebaza.klin@gmail.com</a></p>
+
+      <div class="footer">
+        © 2026 Овощебаза · Клин
+      </div>
+    </div>
+
+    <!-- ============ ENGLISH VERSION ============ -->
+    <div id="lang-en">
+      <h1>🥬 Privacy Policy</h1>
+      <p class="subtitle">OvosheBaza · Fruit &amp; vegetable delivery · Last updated: July 2026</p>
+
+      <p>This Privacy Policy explains what data the OvosheBaza app ("we", "the app", "the service") collects, why we collect it, and how we protect it. The app delivers fruit and vegetables and operates in the city of Klin, Russia, and surrounding areas.</p>
+
+      <h2>1. Information We Collect</h2>
+      <p>We collect only what is necessary to accept and deliver an order:</p>
+      <ul>
+        <li><strong>Phone number</strong> — used to sign in to the app and to contact you about your order.</li>
+        <li><strong>Name</strong> — the name you enter in your profile.</li>
+        <li><strong>Delivery addresses</strong> — saved so you don't have to type them again for your next order.</li>
+        <li><strong>Order history</strong> — items, totals, dates, and statuses of your orders.</li>
+        <li><strong>Notification device token</strong> — a technical identifier required to deliver push notifications.</li>
+      </ul>
+      <p>We do not collect device location, do not read your contacts, and have no access to your photos or files.</p>
+
+      <h2>2. How We Use Your Information</h2>
+      <ul>
+        <li>To accept your order, prepare it, and deliver it to your address.</li>
+        <li>To calculate the delivery fee for the address you provide.</li>
+        <li>To contact you by phone if there are questions about your order.</li>
+        <li>To show you your order history.</li>
+        <li>To send notifications about new arrivals and order status — only if you allowed notifications.</li>
+      </ul>
+
+      <h2>3. Data Storage and Security</h2>
+      <p>Your data is stored in Google Firebase (Firestore) with encryption in transit and at rest. Only you can access your profile — this is enforced by Firebase Security Rules tied to your authenticated account. Store staff see only the order details needed to prepare and deliver it.</p>
+
+      <h2>4. Third-Party Services</h2>
+      <p>We do not sell your data and do not share it for advertising. Data is shared only with services the app cannot operate without:</p>
+      <ul>
+        <li><strong><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase</a></strong> — phone number authentication, data storage, push notifications.</li>
+        <li><strong>Telegram</strong> — a placed order is sent to the store's private staff chat so employees can see it and start preparing it. The message includes the order items, name, phone number, and delivery address.</li>
+        <li><strong>Geocoding service</strong> — the address you enter is converted into coordinates to calculate distance and delivery cost.</li>
+      </ul>
+
+      <h2>5. Notifications</h2>
+      <p>Push notifications are sent only with your permission. You can turn them off at any time in your phone settings — this does not affect how the app works.</p>
+
+      <h2 id="delete-en">6. Account and Data Deletion</h2>
+      <p>You can delete your account at any time. No emails or waiting are required.</p>
+      <div class="highlight">
+        <p><strong>To delete your account in the app:</strong></p>
+        <ul>
+          <li>Open the <strong>Profile</strong> tab</li>
+          <li>Scroll down and tap <strong>"Delete account"</strong></li>
+          <li>Confirm the deletion</li>
+        </ul>
+        <p style="margin-top:12px;"><strong>If the app is not installed:</strong> email us at <a href="mailto:ovoshebaza.klin@gmail.com">ovoshebaza.klin@gmail.com</a> from the phone number your account is registered to, stating that number in the message. We will delete the account within 30 days.</p>
+      </div>
+      <p style="margin-top:16px;"><strong>What is deleted:</strong> your profile, name, saved delivery addresses, and notification tokens — permanently.</p>
+      <p><strong>What is retained:</strong> anonymized records of completed orders, which we need for accounting and tax purposes and keep for the periods required by law. These records are not used to contact you.</p>
+
+      <h2>7. Children's Privacy</h2>
+      <p>This app is not directed at children under 13. We do not knowingly collect personal data from children under 13.</p>
+
+      <h2>8. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify users of significant changes through the app. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+      <h2>9. Contact Us</h2>
+      <p>If you have any questions about this Policy or your data, please contact us at:<br/>
+      <a href="mailto:ovoshebaza.klin@gmail.com">ovoshebaza.klin@gmail.com</a></p>
+
+      <div class="footer">
+        © 2026 OvosheBaza · Klin, Russia
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Включаем режим переключения только если JS работает.
+    // Без JS страница покажет обе версии — это не ломает требования сторов.
+    document.body.classList.add('js-on');
+
+    function setLang(lang) {
+      var isEn = (lang === 'en');
+      document.body.classList.toggle('show-en', isEn);
+      document.getElementById('btn-en').classList.toggle('active', isEn);
+      document.getElementById('btn-ru').classList.toggle('active', !isEn);
+      document.documentElement.lang = lang;
+    }
+
+    // Если открыли ссылку с #delete-en — сразу показываем английскую версию
+    if (window.location.hash === '#delete-en') {
+      setLang('en');
+    }
+  </script>
+</body>
+</html>
